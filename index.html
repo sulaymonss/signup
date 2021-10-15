@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#"><h1 class="title">Index</h1></a>
+                <button class="logout" id="logout">Log out</button>
+            </nav>
+        </div>
+    </header>    
+    <main class="main">
+        <div class="container">
+            <h2 class="users_title">Users</h2>
+            <div class="chevron_wrapper">
+                <button class="btn_chevron" id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn_chevron" id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <ul class="list"></ul>
+        </div>
+    </main>
+    
+    <template id="template">
+        <li class="card">
+            <img src="https://picsum.photos/150" alt="img" class="img">
+            <div class="card_text">
+                <span class="first_name"></span>
+                <span class="last_name"></span>
+                <p class="email"></p>
+            </div>
+        </li>
+    </template>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
